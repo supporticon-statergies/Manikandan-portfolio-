@@ -42,6 +42,8 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -50,8 +52,9 @@ body {
   color: var(--text-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #root {
@@ -274,6 +277,51 @@ img { display: block; }
   .sidebar-mobile-header svg {
     width: 13px !important;
     height: 13px !important;
+  }
+}
+
+/* ── Responsive Layout Containers ────────────────────── */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 14px 24px;
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 12px 12px !important;
+  }
+}
+
+.main-content-container {
+  flex: 1;
+  max-width: 100%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  .main-content-container {
+    padding: 32px 12px 64px !important;
+  }
+}
+
+.footer-container {
+  background: #FFFFFF;
+  border-top: 1px solid #D7F0DE;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 24px 12px !important;
   }
 }
 

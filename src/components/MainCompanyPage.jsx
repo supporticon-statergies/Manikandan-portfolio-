@@ -33,15 +33,7 @@ export default function MainCompanyPage() {
         zIndex: 100,
         boxShadow: '0 2px 12px rgba(47, 168, 102, 0.05)',
       }}>
-        <div style={{
-          maxWidth: '100%',
-          width: '95%',
-          margin: '0 auto',
-          padding: '14px 24px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}>
+        <div className="header-container">
           {/* Identity */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }} onClick={() => handleNavigate('profile')}>
             <img
@@ -89,14 +81,7 @@ export default function MainCompanyPage() {
 
       {/* ── Main content area (Centered Column) ── */}
       <motion.main
-        style={{
-          flex: 1,
-          maxWidth: '100%',
-          width: '95%',
-          margin: '0 auto',
-          padding: '48px 24px 96px',
-          position: 'relative',
-        }}
+        className="main-content-container"
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
@@ -128,13 +113,8 @@ export default function MainCompanyPage() {
       </motion.main>
 
       {/* ── Footer ── */}
-      <footer style={{
-        background: '#FFFFFF',
-        borderTop: '1px solid #D7F0DE',
-        padding: '32px 24px',
-        textAlign: 'center',
-      }}>
-        <div style={{ maxWidth: '100%', width: '95%', margin: '0 auto' }}>
+      <footer className="footer-container">
+        <div style={{ margin: '0 auto' }}>
           <p style={{ fontSize: '12px', color: '#5B5B5B' }}>
             © {new Date().getFullYear()} Manikandan · Mani The Support Expert
           </p>
