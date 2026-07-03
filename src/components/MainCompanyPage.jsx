@@ -42,6 +42,10 @@ export default function MainCompanyPage() {
               style={{
                 height: '36px',
                 width: '36px',
+                minWidth: '36px',
+                minHeight: '36px',
+                flexShrink: 0,
+                aspectRatio: '1/1',
                 borderRadius: '50%',
                 objectFit: 'cover',
                 border: '1.5px solid #2FA866',

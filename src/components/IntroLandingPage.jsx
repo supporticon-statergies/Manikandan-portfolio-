@@ -147,6 +147,10 @@ export default function IntroLandingPage({ onEnter }) {
             style={{
               height: '140px',
               width: '140px',
+              minWidth: '140px',
+              minHeight: '140px',
+              flexShrink: 0,
+              aspectRatio: '1/1',
               borderRadius: '50%',
               objectFit: 'cover',
               border: '3px solid #2FA866',

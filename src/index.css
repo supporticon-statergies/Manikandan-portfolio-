@@ -156,6 +156,9 @@ img { display: block; }
   .about-me-flex .profile-img {
     width: 140px !important;
     height: 140px !important;
+    min-width: 140px !important;
+    min-height: 140px !important;
+    aspect-ratio: 1/1 !important;
   }
 
   .about-me-text p {

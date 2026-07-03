@@ -98,6 +98,10 @@ export default function AboutMeSection() {
             style={{
               width: '220px',
               height: '220px',
+              minWidth: '220px',
+              minHeight: '220px',
+              flexShrink: 0,
+              aspectRatio: '1/1',
               borderRadius: '50%',
               objectFit: 'cover',
               border: '3px solid #2FA866',
