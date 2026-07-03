@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import introVideo from '../assets/1st.mp4';
 import featuresVideo from '../assets/featuresmp4.mp4';
-import onboardVideo from '../assets/onboard.mp4';
+import onboardVideo from '../assets/Onboarding final.mp4';
 import posterImg from '../assets/mani_sir.jpeg';
 
 const videoDemos = [
