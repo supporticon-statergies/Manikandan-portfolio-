@@ -1,0 +1,231 @@
+import { motion } from 'framer-motion';
+import { siteConfig } from '../config/siteConfig';
+
+// ── EnterButton ──────────────────────────────────────────────
+function EnterButton({ onClick }) {
+  return (
+    <motion.button
+      onClick={onClick}
+      id="enter-site-btn"
+      aria-label="Enter Supporticon company profile"
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 1.1, ease: 'easeOut' }}
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.97 }}
+      style={{
+        marginTop: '48px',
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '10px',
+        padding: '14px 32px',
+        background: 'transparent',
+        border: '1.5px solid #2FA866',
+        borderRadius: '100px',
+        cursor: 'pointer',
+        color: '#1e7b48',
+        fontSize: '13px',
+        fontWeight: '600',
+        letterSpacing: '0.08em',
+        textTransform: 'uppercase',
+        fontFamily: 'Inter, sans-serif',
+        transition: 'background 0.22s ease, color 0.22s ease',
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = '#2FA866';
+        e.currentTarget.style.color = '#FFFFFF';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = 'transparent';
+        e.currentTarget.style.color = '#1e7b48';
+      }}
+    >
+      Explore Profile
+      <motion.svg
+        width="16" height="16" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" strokeWidth="2"
+        strokeLinecap="round" strokeLinejoin="round"
+        animate={{ x: [0, 4, 0] }}
+        transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+      >
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </motion.svg>
+    </motion.button>
+  );
+}
+
+// ── IntroLandingPage ─────────────────────────────────────────
+export default function IntroLandingPage({ onEnter }) {
+  return (
+    <motion.div
+      key="intro"
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 50,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        overflow: 'hidden',
+        background: '#F8FFFA',
+      }}
+      exit={{ opacity: 0, scale: 1.04 }}
+      transition={{ duration: 0.65, ease: [0.4, 0, 0.2, 1] }}
+    >
+      {/* Radial green glow behind content */}
+      <div style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: '680px',
+        height: '480px',
+        borderRadius: '50%',
+        background: 'radial-gradient(ellipse at center, rgba(47, 168, 102, 0.10) 0%, rgba(47, 168, 102, 0.04) 45%, transparent 70%)',
+        pointerEvents: 'none',
+      }} />
+
+      {/* Top-left corner accent */}
+      <motion.div
+        className="intro-corner-tl"
+        style={{
+          position: 'absolute',
+          top: 0, left: 0,
+          width: '260px', height: '260px',
+          borderRight: '1px solid #D7F0DE',
+          borderBottom: '1px solid #D7F0DE',
+          borderBottomRightRadius: '260px',
+          pointerEvents: 'none',
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      />
+
+      {/* Bottom-right corner accent */}
+      <motion.div
+        className="intro-corner-br"
+        style={{
+          position: 'absolute',
+          bottom: 0, right: 0,
+          width: '200px', height: '200px',
+          borderLeft: '1px solid #D7F0DE',
+          borderTop: '1px solid #D7F0DE',
+          borderTopLeftRadius: '200px',
+          pointerEvents: 'none',
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.4 }}
+      />
+
+      {/* Centered Content */}
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+        padding: '0 24px',
+        maxWidth: '560px',
+        width: '100%',
+        position: 'relative',
+        zIndex: 2,
+      }}>
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, y: -16, scale: 0.94 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.72, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          style={{ marginBottom: '40px' }}
+        >
+          <img
+            src="/logo.png"
+            alt={`${siteConfig.company.name} — ${siteConfig.company.tagline}`}
+            className="intro-logo"
+            style={{
+              height: '96px',
+              width: 'auto',
+              maxWidth: '100%',
+              objectFit: 'contain',
+              borderRadius: '8px',
+              mixBlendMode: 'multiply',
+            }}
+          />
+        </motion.div>
+
+        {/* Thin accent line — green */}
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.55, delay: 0.65, ease: 'easeOut' }}
+          style={{
+            width: '40px',
+            height: '2px',
+            background: 'linear-gradient(to right, #2FA866, #34A853)',
+            borderRadius: '2px',
+            marginBottom: '28px',
+            transformOrigin: 'left center',
+          }}
+        />
+
+        {/* Headline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.65, delay: 0.75, ease: [0.22, 1, 0.36, 1] }}
+          style={{
+            fontSize: 'clamp(22px, 5vw, 34px)',
+            fontWeight: '600',
+            color: '#1F1F1F',
+            lineHeight: '1.35',
+            letterSpacing: '-0.02em',
+            fontFamily: 'Inter, sans-serif',
+            marginBottom: '16px',
+          }}
+        >
+          Intelligent Support.
+          <br />
+          <span style={{ color: '#2FA866', fontWeight: '500' }}>
+            Meaningful Experiences.
+          </span>
+        </motion.h1>
+
+        {/* Sub-line */}
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.92, ease: 'easeOut' }}
+          style={{
+            fontSize: '14px',
+            color: '#5B5B5B',
+            lineHeight: '1.7',
+            maxWidth: '360px',
+          }}
+        >
+          Transforming how businesses connect with, support, and delight their customers — at scale.
+        </motion.p>
+
+        {/* Enter CTA */}
+        <EnterButton onClick={onEnter} />
+
+        {/* Bottom label */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 1.5 }}
+          style={{
+            marginTop: '56px',
+            fontSize: '11px',
+            color: '#BABABA',
+            letterSpacing: '0.1em',
+            textTransform: 'uppercase',
+          }}
+        >
+          {siteConfig.company.name} · Company Profile
+        </motion.p>
+      </div>
+    </motion.div>
+  );
+}

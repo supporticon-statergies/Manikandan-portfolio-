@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+/* ── Design Tokens ──────────────────────────────────── */
+:root {
+  /* Green Palette */
+  --green-bg:        #F8FFFA;  /* Main background */
+  --green-bg-soft:   #F6FCF7;  /* Secondary soft green */
+  --green-card-tint: #F2FBF4;  /* Card highlight */
+  --green-accent:    #2FA866;  /* Accent green (labels, highlights) */
+  --green-deep:      #1e7b48;  /* Deeper green for hover/emphasis */
+  --green-border:    #D7F0DE;  /* Soft border green */
+  --green-border-soft: #E8F5ED;
+
+  /* Sidebar */
+  --sidebar-bg:      #FFFFFF;  /* Pure white sidebar */
+  --sidebar-border:  #D7F0DE;
+
+  /* Card / Panel */
+  --card-bg:         #FFFFFF;
+  --card-hover:      #F5FBF6;
+
+  /* Text Colors */
+  --text-dark:       #1F1F1F;
+  --text-mid:        #5B5B5B;
+  --text-soft:       #7A7A7A;
+  --text-faint:      #BABABA;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 4px rgba(50, 100, 70, 0.05);
+  --shadow-md:  0 6px 20px rgba(50, 100, 70, 0.07);
+  --shadow-lg:  0 16px 48px rgba(50, 100, 70, 0.09);
+  --shadow-green: 0 8px 28px rgba(47, 168, 102, 0.18);
+}
+
+/* ── Reset ──────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--green-bg);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background: var(--green-bg);
+}
+
+/* ── Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--green-bg); }
+::-webkit-scrollbar-thumb { background: var(--green-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--green-accent); }
+
+/* ── Selection ──────────────────────────────────────── */
+::selection { background: rgba(47, 168, 102, 0.18); color: var(--text-dark); }
+
+/* ── Utility ─────────────────────────────────────────── */
+a { text-decoration: none; color: inherit; }
+img { display: block; }
+
+/* ── Mobile Responsive Layout ───────────────────────── */
+
+/* Main two-panel layout — sidebar left + content right */
+.site-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--green-bg);
+}
+
+.sidebar-panel {
+  width: 268px;
+  flex-shrink: 0;
+}
+
+.content-panel {
+  flex: 1;
+  min-width: 0;
+  padding: 64px 56px 96px;
+  background: var(--green-bg);
+  position: relative;
+}
+
+/* ── Sidebar: mobile top banner ─────────────────────── */
+@media (max-width: 768px) {
+  .site-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-panel {
+    width: 100%;
+    flex-shrink: unset;
+  }
+
+  /* Sidebar turns into a compact horizontal strip */
+  .sidebar-mobile-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: #FFFFFF;
+    border-bottom: 1px solid var(--green-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(47, 168, 102, 0.07);
+  }
+
+  .sidebar-desktop-full {
+    display: none !important;
+  }
+
+  .content-panel {
+    padding: 32px 20px 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-panel {
+    padding: 24px 16px 64px;
+  }
+}
+
+/* ── About Me Section responsive ────────────────────── */
+.about-me-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+@media (max-width: 640px) {
+  .about-me-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .about-me-flex .profile-img {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .about-me-text p {
+    max-width: 100% !important;
+  }
+}
+
+/* ── Social channels grid ────────────────────────────── */
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .channels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 360px) {
+  .channels-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Cards grid ──────────────────────────────────────── */
+@media (max-width: 500px) {
+  .service-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Video section ───────────────────────────────────── */
+@media (max-width: 640px) {
+  .video-upload-tabs {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .video-tab-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
+
+/* ── Touch-friendly tap targets ─────────────────────── */
+@media (max-width: 768px) {
+  button, a, [role="button"] {
+    min-height: 44px;
+  }
+}
+
+/* ── Intro landing page ──────────────────────────────── */
+@media (max-width: 480px) {
+  .intro-logo {
+    height: 72px !important;
+  }
+
+  .intro-corner-tl {
+    width: 140px !important;
+    height: 140px !important;
+    border-bottom-right-radius: 140px !important;
+  }
+
+  .intro-corner-br {
+    width: 120px !important;
+    height: 120px !important;
+    border-top-left-radius: 120px !important;
+  }
+}
+
+/* ── Best practices cards ────────────────────────────── */
+.best-practices-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .best-practices-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Section eyebrow text max-width mobile fix ─────── */
+@media (max-width: 640px) {
+  .section-intro-text {
+    max-width: 100% !important;
+  }
+}
+
+/* ── HomeSection stats strip ─────────────────────────── */
+@media (max-width: 400px) {
+  .hero-stats-strip {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+}
+
