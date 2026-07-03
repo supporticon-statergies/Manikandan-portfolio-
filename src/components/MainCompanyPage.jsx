@@ -60,7 +60,7 @@ export default function MainCompanyPage() {
                 Manikandan
               </p>
               <p style={{ fontSize: '12px', color: '#2FA866', fontWeight: '600', letterSpacing: '0.04em' }}>
-                Mani The Support Expert
+                The Support Expert
               </p>
             </div>
           </div>
