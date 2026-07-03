@@ -29,10 +29,10 @@ function BookOpenIcon({ size = 18 }) {
 const CHANNELS = [
   { key: 'linkedin',  label: 'LinkedIn',   Icon: LinkedInIcon },
   { key: 'instagram', label: 'Instagram',  Icon: InstagramIcon },
-  { key: 'youtube',   label: 'YouTube',    Icon: YouTubeIcon },
   { key: 'website',   label: 'Website',    Icon: GlobeIcon },
-  { key: 'whatsapp',  label: 'WhatsApp',   Icon: WhatsAppIcon },
+  { key: 'youtube',   label: 'YouTube',    Icon: YouTubeIcon },
   { key: 'insights',  label: 'Support Insights', Icon: BookOpenIcon, isPageLink: true, pageKey: 'best-practices', handle: '10 SaaS Best Practices' },
+  { key: 'whatsapp',  label: 'WhatsApp',   Icon: WhatsAppIcon },
 ];
 
 export default function SocialChannelsSection({ onNavigate }) {
