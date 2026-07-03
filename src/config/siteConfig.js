@@ -3,18 +3,16 @@
 // ============================================================
 
 export const siteConfig = {
-  // ── Company ─────────────────────────────────────────────
+  // ── Personal Brand ──────────────────────────────────────
   company: {
-    name: 'Supporticon',
-    tagline: 'Catalyst for Excellence',
-    website: 'https://supporticon.com/',
+    name: 'Mani',
+    tagline: 'The Support Expert',
   },
 
-  // ── What We Do — Placeholder content ────────────────────
-  // Replace with your real content later
+  // ── What I Done — Placeholder content ────────────────────
   whatWeDo: {
-    heading: 'What We Do',
-    intro: 'We built the AI-powered support intelligence tool that knows the support operations better and handles the customer support queries effectively with human-like AI by your L1 Support engineers. Also it notifies the Founder on what their customers don’t like in their product, what difficulties they face, what new feature they expects. Tool will bring the strategic insights from support tickets to take their product decisions.',
+    heading: 'What I Done',
+    intro: 'I built the AI-powered support intelligence tool that knows the support operations better and handles the customer support queries effectively with human-like AI by your L1 Support engineers. Also it notifies the Founder on what their customers don’t like in their product, what difficulties they face, what new feature they expects. Tool will bring the strategic insights from support tickets to take their product decisions.',
     items: [
       {
         id: 1,
@@ -36,17 +34,17 @@ export const siteConfig = {
 
   // ── Social Channels ──────────────────────────────────────
   social: {
-    linkedin: { url: 'https://www.linkedin.com/company/106249765/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BBmfjNshHQfyJoRt0z25jrQ%3D%3D', label: 'LinkedIn', handle: 'Supporticon' },
+    linkedin: { url: 'https://linkedin.com/in/s-a-manikandan', label: 'LinkedIn', handle: 's-a-manikandan' },
     instagram: { url: 'https://www.instagram.com/mani_thesupportdude?igsh=MWlwaDRwMjI4cjNtNA%3D%3D&utm_source=qr', label: 'Instagram', handle: '@mani_thesupportdude' },
     youtube: { url: 'https://youtube.com/@mani_thesupportdude', label: 'YouTube', handle: '@mani_thesupportdude' },
-    website: { url: 'https://supporticon.com/', label: 'Website', handle: 'supporticon.com' },
   },
 
   // ── Video Section ───────────────────────────────────────
   video: {
-    title: 'How Supporticon Strategizes Scaling Customer Support',
+    title: 'How Mani Will Strategize Scaling Customer Support',
     subtitle: 'Featured Overview',
-    description: 'Watch a quick overview of how we empower SaaS startups to manage support ticket spikes, streamline L1 workflows, and notify founders of critical product issues.',
+    description: 'Watch a quick overview of how Mani empowers SaaS startups to manage support ticket spikes, streamline L1 workflows, and notify founders of critical product issues.',
     youtubeId: 'dQw4w9WgXcQ', // Placeholder YouTube Video ID
   },
 };
+

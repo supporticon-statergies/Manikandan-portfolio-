@@ -16,7 +16,7 @@ export default function AboutSection() {
     >
       {/* ── Meet the Founder ── */}
       <section className="mb-10">
-        <SectionHeader eyebrow="The Founder" title="Meet the Person Behind Supporticon" />
+        <SectionHeader eyebrow="The Founder" title="Meet Manikandan" />
 
         <div className="flex flex-col sm:flex-row gap-6 items-start">
           {/* Photo card */}
@@ -96,7 +96,7 @@ export default function AboutSection() {
 
       {/* ── About the Company ── */}
       <section className="mb-10">
-        <SectionHeader eyebrow="Our Company" title="About Supporticon" />
+        <SectionHeader eyebrow="Our Company" title="About Mani" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Company card */}

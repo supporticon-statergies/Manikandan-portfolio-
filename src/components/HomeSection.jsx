@@ -246,7 +246,7 @@ export default function HomeSection() {
       {/* ── Why Choose Us ── */}
       <section className="mb-10">
         <SectionHeader
-          eyebrow="Why Supporticon"
+          eyebrow="Why Mani"
           title="Why Choose Us"
           description="Measurable outcomes, trusted by teams who demand more."
         />

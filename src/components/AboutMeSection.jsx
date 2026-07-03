@@ -25,7 +25,7 @@ export default function AboutMeSection() {
               marginBottom: '14px',
             }}
           >
-            About Me
+            look into
           </motion.p>
 
           {/* Section heading */}
@@ -61,7 +61,7 @@ export default function AboutMeSection() {
             }}
             className="section-intro-text"
           >
-            I am Manikandan, the proud Support Professional and Founder of Supporticon Strategies Pvt Ltd. We help SaaS Founders not to fail during their scaling stage due to lack of Customer Support system in place to handle the customers spike from 10 to 100 and more.
+             I am Manikandan, a customer support operations specialist. I help SaaS founders build and scale structured support systems that keep customers happy during rapid growth stages — scaling smoothly from 10 to 100+ customers and beyond.
           </motion.p>
           
           <motion.p
@@ -93,7 +93,7 @@ export default function AboutMeSection() {
         >
           <img
             src={`${import.meta.env.BASE_URL}sir_profile.jpeg`}
-            alt="Manikandan — Founder of Supporticon"
+            alt="Manikandan — Customer Support Expert"
             className="profile-img"
             style={{
               width: '220px',

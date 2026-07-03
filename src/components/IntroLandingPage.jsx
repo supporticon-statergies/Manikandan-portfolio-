@@ -7,7 +7,7 @@ function EnterButton({ onClick }) {
     <motion.button
       onClick={onClick}
       id="enter-site-btn"
-      aria-label="Enter Supporticon company profile"
+      aria-label="Enter Manikandan's personal branding profile"
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 1.1, ease: 'easeOut' }}
@@ -138,19 +138,19 @@ export default function IntroLandingPage({ onEnter }) {
           initial={{ opacity: 0, y: -16, scale: 0.94 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.72, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          style={{ marginBottom: '40px' }}
+          style={{ marginBottom: '32px' }}
         >
           <img
-            src={`${import.meta.env.BASE_URL}logo.png`}
-            alt={`${siteConfig.company.name} — ${siteConfig.company.tagline}`}
+            src={`${import.meta.env.BASE_URL}supportdude.png`}
+            alt="Mani The Support Expert"
             className="intro-logo"
             style={{
-              height: '96px',
-              width: 'auto',
-              maxWidth: '100%',
-              objectFit: 'contain',
-              borderRadius: '8px',
-              mixBlendMode: 'multiply',
+              height: '80px',
+              width: '80px',
+              borderRadius: '50%',
+              objectFit: 'cover',
+              border: '2.5px solid #2FA866',
+              boxShadow: '0 6px 20px rgba(47, 168, 102, 0.25)',
             }}
           />
         </motion.div>
@@ -176,20 +176,16 @@ export default function IntroLandingPage({ onEnter }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, delay: 0.75, ease: [0.22, 1, 0.36, 1] }}
           style={{
-            fontSize: 'clamp(22px, 5vw, 34px)',
-            fontWeight: '600',
+            fontSize: 'clamp(28px, 6vw, 38px)',
+            fontWeight: '700',
             color: '#1F1F1F',
-            lineHeight: '1.35',
-            letterSpacing: '-0.02em',
+            lineHeight: '1.25',
+            letterSpacing: '-0.025em',
             fontFamily: 'Inter, sans-serif',
             marginBottom: '16px',
           }}
         >
-          Intelligent Support.
-          <br />
-          <span style={{ color: '#2FA866', fontWeight: '500' }}>
-            Meaningful Experiences.
-          </span>
+          Mani The Support Expert
         </motion.h1>
 
         {/* Sub-line */}
@@ -198,13 +194,13 @@ export default function IntroLandingPage({ onEnter }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.92, ease: 'easeOut' }}
           style={{
-            fontSize: '14px',
+            fontSize: '14.5px',
             color: '#5B5B5B',
             lineHeight: '1.7',
-            maxWidth: '360px',
+            maxWidth: '420px',
           }}
         >
-          Transforming how businesses connect with, support, and delight their customers — at scale.
+          10+ years scaling global support operations for Fortune 100 brands, now designing infrastructure that makes SaaS customers stay.
         </motion.p>
 
         {/* Enter CTA */}
@@ -219,11 +215,11 @@ export default function IntroLandingPage({ onEnter }) {
             marginTop: '56px',
             fontSize: '11px',
             color: '#BABABA',
-            letterSpacing: '0.1em',
+            letterSpacing: '0.15em',
             textTransform: 'uppercase',
           }}
         >
-          {siteConfig.company.name} · Company Profile
+          look into
         </motion.p>
       </div>
     </motion.div>

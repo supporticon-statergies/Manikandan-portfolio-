@@ -368,7 +368,7 @@ export default function VideoSection() {
                     width="100%"
                     height="100%"
                     src={`https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1`}
-                    title="Supporticon Video Player"
+                    title="Video Player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     style={{ border: 'none', display: 'block', width: '100%', height: '100%' }}
