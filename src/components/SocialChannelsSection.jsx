@@ -216,6 +216,7 @@ export default function SocialChannelsSection({ onNavigate }) {
             <motion.a
               key={key}
               id={`social-channel-${key}`}
+              className={key === 'youtube' ? 'youtube-centered-card' : ''}
               href={url}
               target="_blank"
               rel="noopener noreferrer"

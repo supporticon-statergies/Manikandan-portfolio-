@@ -179,6 +179,12 @@ img { display: block; }
   }
 }
 
+@media (min-width: 361px) {
+  .youtube-centered-card {
+    grid-column: 2 !important;
+  }
+}
+
 /* ── Cards grid ──────────────────────────────────────── */
 @media (max-width: 500px) {
   .service-cards-grid {
