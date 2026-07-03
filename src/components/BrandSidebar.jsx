@@ -96,7 +96,7 @@ export default function BrandSidebar() {
             <p style={{ fontSize: '13px', fontWeight: '700', color: '#1F1F1F', lineHeight: 1.2 }}>
               {siteConfig.company.name}
             </p>
-            <p style={{ fontSize: '10px', color: '#2FA866', fontWeight: '600', letterSpacing: '0.06em' }}>
+            <p className="mobile-tagline" style={{ fontSize: '10px', color: '#2FA866', fontWeight: '600', letterSpacing: '0.06em' }}>
               {siteConfig.company.tagline}
             </p>
           </div>

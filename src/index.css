@@ -252,3 +252,23 @@ img { display: block; }
   }
 }
 
+/* ── Mobile Header Layout & Overflow Fix ────────────── */
+@media (max-width: 600px) {
+  .sidebar-mobile-header {
+    padding: 10px 14px !important;
+  }
+  .sidebar-mobile-header .mobile-tagline {
+    display: none !important;
+  }
+  .sidebar-mobile-header a {
+    width: 30px !important;
+    height: 30px !important;
+    min-height: 30px !important; /* override the min-height: 44px rule */
+  }
+  .sidebar-mobile-header svg {
+    width: 13px !important;
+    height: 13px !important;
+  }
+}
+
+
