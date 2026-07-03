@@ -134,10 +134,11 @@ export default function CredibilitySection() {
                 <div
                   key={idx}
                   style={{
-                    background: 'linear-gradient(135deg, rgba(47, 168, 102, 0.02), rgba(246, 252, 247, 0.6))',
+                    background: '#FFFFFF',
                     border: '1px solid #D7F0DE',
                     borderRadius: '14px',
                     padding: '24px',
+                    boxShadow: '0 4px 20px rgba(50, 100, 70, 0.05)',
                   }}
                 >
                   <div style={{

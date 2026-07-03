@@ -92,7 +92,7 @@ export default function AboutMeSection() {
           style={{ flexShrink: 0 }}
         >
           <img
-            src={`${import.meta.env.BASE_URL}sir_profile.jpeg`}
+            src={`${import.meta.env.BASE_URL}ceo.png`}
             alt="Manikandan — Customer Support Expert"
             className="profile-img"
             style={{

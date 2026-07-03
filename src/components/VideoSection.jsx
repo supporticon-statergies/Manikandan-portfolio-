@@ -185,7 +185,7 @@ export default function VideoSection() {
               style={{
                 background: '#FFFFFF',
                 border: dragActive ? '2px dashed #2FA866' : '2px dashed #CFEAD8',
-                borderRadius: '16px',
+                borderRadius: '6px',
                 padding: '36px 28px',
                 textAlign: 'center',
                 boxShadow: '0 8px 24px rgba(50, 100, 70, 0.04)',
@@ -207,7 +207,7 @@ export default function VideoSection() {
                   style={{
                     background: '#FFFFFF',
                     border: '1px solid #D7F0DE',
-                    borderRadius: '12px',
+                    borderRadius: '4px',
                     padding: '20px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -252,7 +252,7 @@ export default function VideoSection() {
                   style={{
                     background: '#FFFFFF',
                     border: '1px solid #D7F0DE',
-                    borderRadius: '12px',
+                    borderRadius: '4px',
                     padding: '20px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -353,7 +353,7 @@ export default function VideoSection() {
 
               {/* Player Container */}
               <div
-                className="relative rounded-2xl overflow-hidden"
+                className="relative rounded-md overflow-hidden"
                 style={{
                   boxShadow: '0 12px 32px rgba(50, 100, 70, 0.08)',
                   border: '1px solid #D7F0DE',

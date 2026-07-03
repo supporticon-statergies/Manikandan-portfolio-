@@ -34,7 +34,8 @@ export default function MainCompanyPage() {
         boxShadow: '0 2px 12px rgba(47, 168, 102, 0.05)',
       }}>
         <div style={{
-          maxWidth: '1200px',
+          maxWidth: '1440px',
+          width: '92%',
           margin: '0 auto',
           padding: '14px 24px',
           display: 'flex',
@@ -44,7 +45,7 @@ export default function MainCompanyPage() {
           {/* Identity */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }} onClick={() => handleNavigate('profile')}>
             <img
-              src={`${import.meta.env.BASE_URL}sir_profile.jpeg`}
+              src={`${import.meta.env.BASE_URL}ceo.png`}
               alt="Mani"
               style={{
                 height: '36px',
@@ -58,7 +59,7 @@ export default function MainCompanyPage() {
               <p style={{ fontSize: '14px', fontWeight: '700', color: '#1F1F1F', lineHeight: 1.1 }}>
                 Manikandan
               </p>
-              <p style={{ fontSize: '10px', color: '#2FA866', fontWeight: '600', letterSpacing: '0.04em' }}>
+              <p style={{ fontSize: '12px', color: '#2FA866', fontWeight: '600', letterSpacing: '0.04em' }}>
                 Mani The Support Expert
               </p>
             </div>
@@ -90,8 +91,8 @@ export default function MainCompanyPage() {
       <motion.main
         style={{
           flex: 1,
-          maxWidth: '1200px',
-          width: '100%',
+          maxWidth: '1440px',
+          width: '92%',
           margin: '0 auto',
           padding: '48px 24px 96px',
           position: 'relative',
@@ -133,7 +134,7 @@ export default function MainCompanyPage() {
         padding: '32px 24px',
         textAlign: 'center',
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1440px', width: '92%', margin: '0 auto' }}>
           <p style={{ fontSize: '12px', color: '#5B5B5B' }}>
             © {new Date().getFullYear()} Manikandan · Mani The Support Expert
           </p>

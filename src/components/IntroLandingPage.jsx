@@ -141,7 +141,7 @@ export default function IntroLandingPage({ onEnter }) {
           style={{ marginBottom: '32px' }}
         >
           <img
-            src={`${import.meta.env.BASE_URL}sir_profile.jpeg`}
+            src={`${import.meta.env.BASE_URL}ceo.png`}
             alt="Mani The Support Expert"
             className="intro-logo"
             style={{
