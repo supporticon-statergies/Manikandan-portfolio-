@@ -26,7 +26,7 @@ const QUICK_LINKS = [
   { key: 'whatsapp', Icon: WhatsAppIcon },
 ];
 
-// Shared icon button renderer
+
 function SocialIconBtn({ href, title, id, Icon }) {
   const baseStyle = {
     width: '32px',
