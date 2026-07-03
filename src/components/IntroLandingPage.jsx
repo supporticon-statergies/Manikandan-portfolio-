@@ -141,8 +141,8 @@ export default function IntroLandingPage({ onEnter }) {
           style={{ marginBottom: '32px' }}
         >
           <img
-            src={`${import.meta.env.BASE_URL}ceo.png`}
-            alt="Mani The Support Expert"
+            src={`${import.meta.env.BASE_URL}sir_profile.jpeg`}
+            alt="Manikandan"
             className="intro-logo"
             style={{
               height: '140px',
@@ -182,11 +182,27 @@ export default function IntroLandingPage({ onEnter }) {
             lineHeight: '1.25',
             letterSpacing: '-0.025em',
             fontFamily: 'Inter, sans-serif',
-            marginBottom: '16px',
+            marginBottom: '4px',
           }}
         >
-          Mani The Support Expert
+          Manikandan
         </motion.h1>
+
+        {/* Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.85, ease: 'easeOut' }}
+          style={{
+            fontSize: 'clamp(16px, 4vw, 20px)',
+            fontWeight: '600',
+            color: '#2FA866',
+            fontFamily: 'Inter, sans-serif',
+            marginBottom: '20px',
+          }}
+        >
+          - The Support Expert
+        </motion.p>
 
         {/* Sub-line */}
         <motion.p
