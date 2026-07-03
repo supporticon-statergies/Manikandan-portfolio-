@@ -30,8 +30,8 @@ const CHANNELS = [
   { key: 'linkedin',  label: 'LinkedIn',   Icon: LinkedInIcon },
   { key: 'instagram', label: 'Instagram',  Icon: InstagramIcon },
   { key: 'website',   label: 'Website',    Icon: GlobeIcon },
-  { key: 'youtube',   label: 'YouTube',    Icon: YouTubeIcon },
   { key: 'insights',  label: 'Support Insights', Icon: BookOpenIcon, isPageLink: true, pageKey: 'best-practices', handle: '10 SaaS Best Practices' },
+  { key: 'youtube',   label: 'YouTube',    Icon: YouTubeIcon },
   { key: 'whatsapp',  label: 'WhatsApp',   Icon: WhatsAppIcon },
 ];
 
