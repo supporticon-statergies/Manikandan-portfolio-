@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ManagerProfileCard from './ManagerProfileCard';
 import SectionTabs from './SectionTabs';
 import HomeSection from './HomeSection';
-import VideoSection from './VideoSection';
 import AboutSection from './AboutSection';
 import { siteConfig } from '../config/siteConfig';
 
@@ -15,7 +14,6 @@ const pageVariants = {
 
 const sections = {
   home: HomeSection,
-  video: VideoSection,
   about: AboutSection,
 };
 

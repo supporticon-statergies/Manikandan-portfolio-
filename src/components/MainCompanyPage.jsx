@@ -5,8 +5,6 @@ import WhatWeDoSection from './WhatWeDoSection';
 import CredibilitySection from './CredibilitySection';
 import SocialChannelsSection from './SocialChannelsSection';
 import BestPracticesSection from './BestPracticesSection';
-import VideoSection from './VideoSection';
-import { siteConfig } from '../config/siteConfig';
 
 export default function MainCompanyPage() {
   const [currentPage, setCurrentPage] = useState('profile');
@@ -107,7 +105,6 @@ export default function MainCompanyPage() {
               <AboutMeSection />
               <WhatWeDoSection />
               <CredibilitySection />
-              <VideoSection />
               <SocialChannelsSection onNavigate={handleNavigate} />
             </>
           ) : (

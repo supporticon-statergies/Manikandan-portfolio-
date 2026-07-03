@@ -194,7 +194,7 @@ export default function CredibilitySection() {
           position: 'relative',
           zIndex: 1,
         }}>
-          “When I was setting up support operations for Microsoft’s global team, the first thing we built was a tier model — because volume without structure creates chaos. That’s exactly what happens to a SaaS founder at 100 customers if there’s no system in place. I’ve seen it at 10 million tickets a month and I’ve seen it at 50 tickets a week. The failure mode is identical.”
+          “When I was setting up support operations for Fortune 100 brands’ global team, the first thing we built was a tier model — because volume without structure creates chaos. That’s exactly what happens to a SaaS founder at 100 customers if there’s no system in place. I’ve seen it at 10 million tickets a month and I’ve seen it at 50 tickets a week. The failure mode is identical.”
         </p>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <div style={{ width: '12px', height: '1px', background: '#2FA866' }} />
@@ -230,7 +230,7 @@ export default function CredibilitySection() {
           maxWidth: '680px',
           margin: '0 auto',
         }}>
-          “I didn’t build Helpdude to sell software. I built it because I spent 10 years building the support infrastructure that made Fortune 100 customers stay — and I got tired of watching SaaS founders lose customers to problems I already know how to solve.”
+          “I didn’t mentor Helpdude to sell software. I mentored it because I spent 10 years building the support infrastructure that made Fortune 100 customers stay — and I got tired of watching SaaS founders lose customers to problems I already know how to solve.”
         </p>
       </motion.div>
 

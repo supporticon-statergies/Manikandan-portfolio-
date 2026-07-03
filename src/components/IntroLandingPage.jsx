@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { siteConfig } from '../config/siteConfig';
 
 // ── EnterButton ──────────────────────────────────────────────
 function EnterButton({ onClick }) {

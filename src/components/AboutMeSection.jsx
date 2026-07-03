@@ -81,6 +81,29 @@ export default function AboutMeSection() {
           >
             When they have 10 customers, Founder will directly handle their customer queries by call or WhatsApp. If that 10 becomes 100, they can't handle the same way they did. The result: more than 50% of customers leave in a month since they feel ignored.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, x: -8 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.45, delay: 0.2 }}
+            style={{
+              borderLeft: '3px solid #2FA866',
+              paddingLeft: '16px',
+              marginTop: '20px',
+              maxWidth: '82%',
+            }}
+          >
+            <p style={{
+              fontSize: '15px',
+              fontWeight: '600',
+              color: '#1E7B48',
+              lineHeight: '1.6',
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
+            }}>
+              Empowering SaaS Founders with the Customer Support Systems they need to win the scaling game
+            </p>
+          </motion.div>
         </div>
 
         {/* Right: Circular Profile Image */}
