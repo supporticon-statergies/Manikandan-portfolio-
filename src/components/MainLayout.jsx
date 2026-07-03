@@ -49,7 +49,7 @@ export default function MainLayout() {
               className="w-8 h-8 rounded-xl overflow-hidden flex-shrink-0"
               style={{ boxShadow: '0 2px 8px rgba(47, 168, 102, 0.3)' }}
             >
-              <img src="/logo.png" alt={siteConfig.company.name} className="w-full h-full object-contain bg-white p-0.5" />
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt={siteConfig.company.name} className="w-full h-full object-contain bg-white p-0.5" />
             </div>
             <span
               className="text-sm font-bold hidden xs:block sm:block"

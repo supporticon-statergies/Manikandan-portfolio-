@@ -141,7 +141,7 @@ export default function IntroLandingPage({ onEnter }) {
           style={{ marginBottom: '40px' }}
         >
           <img
-            src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt={`${siteConfig.company.name} — ${siteConfig.company.tagline}`}
             className="intro-logo"
             style={{

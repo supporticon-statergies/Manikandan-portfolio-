@@ -87,7 +87,7 @@ export default function BrandSidebar() {
             alignItems: 'center',
           }}>
             <img
-              src="/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt={siteConfig.company.name}
               style={{ height: '32px', width: 'auto', objectFit: 'contain' }}
             />
@@ -155,7 +155,7 @@ export default function BrandSidebar() {
           }}
         >
           <img
-            src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt={`${siteConfig.company.name} — ${siteConfig.company.tagline}`}
             style={{ maxWidth: '220px', width: '100%', height: 'auto', objectFit: 'contain' }}
           />

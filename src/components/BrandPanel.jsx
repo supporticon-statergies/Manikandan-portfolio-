@@ -23,7 +23,7 @@ export default function BrandPanel() {
         }}
       >
         <img
-          src="/logo.png"
+          src={`${import.meta.env.BASE_URL}logo.png`}
           alt={`${siteConfig.company.name} — ${siteConfig.company.tagline}`}
           style={{
             width: '100%',

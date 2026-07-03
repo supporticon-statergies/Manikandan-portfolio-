@@ -45,7 +45,7 @@ export default function OpeningScreen({ onEnter }) {
             style={{ background: 'white', boxShadow: '0 25px 60px rgba(74, 222, 128, 0.25), 0 8px 24px rgba(56, 189, 248, 0.15)' }}
           >
             <img
-              src="/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt={`${siteConfig.company.name} logo`}
               className="w-full h-full object-contain p-3"
             />
