@@ -2,9 +2,6 @@ import { motion } from 'framer-motion';
 import introVideo from '../assets/1st.mp4';
 import featuresVideo from '../assets/featuresmp4.mp4';
 import onboardVideo from '../assets/onboard.mp4';
-import introPoster from '../assets/intro_thumbnail.png';
-import featuresPoster from '../assets/features_thumbnail.png';
-import onboardPoster from '../assets/onboarding_thumbnail.png';
 
 const videoDemos = [
   {
@@ -12,21 +9,18 @@ const videoDemos = [
     title: 'Introductory Overview',
     description: 'A brief introduction to how the support infrastructure works and empowers SaaS startups.',
     src: introVideo,
-    poster: introPoster,
   },
   {
     id: 'features',
     title: 'Platform Features Overview',
     description: 'Deep dive into the L1 AI-powered support intelligence, Notifications system, and Ticketing dashboard.',
     src: featuresVideo,
-    poster: featuresPoster,
   },
   {
     id: 'onboard',
     title: 'Founder Onboarding Walkthrough',
     description: 'Step-by-step walkthrough of setting up support workflows, syncing alerts, and customizing insights.',
     src: onboardVideo,
-    poster: onboardPoster,
   },
 ];
 
@@ -136,7 +130,6 @@ export default function VideoSection() {
             >
               <video
                 src={demo.src}
-                poster={demo.poster}
                 controls
                 playsInline
                 preload="metadata"
