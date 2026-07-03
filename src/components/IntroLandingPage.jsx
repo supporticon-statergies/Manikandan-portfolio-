@@ -141,16 +141,16 @@ export default function IntroLandingPage({ onEnter }) {
           style={{ marginBottom: '32px' }}
         >
           <img
-            src={`${import.meta.env.BASE_URL}supportdude.png`}
+            src={`${import.meta.env.BASE_URL}sir_profile.jpeg`}
             alt="Mani The Support Expert"
             className="intro-logo"
             style={{
-              height: '80px',
-              width: '80px',
+              height: '140px',
+              width: '140px',
               borderRadius: '50%',
               objectFit: 'cover',
-              border: '2.5px solid #2FA866',
-              boxShadow: '0 6px 20px rgba(47, 168, 102, 0.25)',
+              border: '3px solid #2FA866',
+              boxShadow: '0 8px 24px rgba(47, 168, 102, 0.25)',
             }}
           />
         </motion.div>
