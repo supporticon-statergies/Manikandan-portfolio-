@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
-import { Home, Info } from 'lucide-react';
+import { Home, PlayCircle, Info } from 'lucide-react';
 
 const tabs = [
   { id: 'home', label: 'Home', icon: Home },
+  { id: 'video', label: 'Video', icon: PlayCircle },
   { id: 'about', label: 'About', icon: Info },
 ];
 

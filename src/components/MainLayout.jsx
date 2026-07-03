@@ -4,6 +4,7 @@ import ManagerProfileCard from './ManagerProfileCard';
 import SectionTabs from './SectionTabs';
 import HomeSection from './HomeSection';
 import AboutSection from './AboutSection';
+import VideoSection from './VideoSection';
 import { siteConfig } from '../config/siteConfig';
 
 const pageVariants = {
@@ -14,6 +15,7 @@ const pageVariants = {
 
 const sections = {
   home: HomeSection,
+  video: VideoSection,
   about: AboutSection,
 };
 
