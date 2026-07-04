@@ -219,7 +219,7 @@ export default function IntroLandingPage({ onEnter }) {
             maxWidth: '420px',
           }}
         >
-          10+ years scaling global support operations for Fortune 100 brands, now designing infrastructure that makes SaaS customers stay.
+          I've spent the last decade building global support operations for Fortune 100 companies. Today, I'm bringing those enterprise support practices to SaaS startups—helping them build customer support that becomes a competitive advantage
         </motion.p>
 
         {/* Enter CTA */}

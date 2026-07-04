@@ -12,7 +12,7 @@ export const siteConfig = {
   // ── What I Done — Placeholder content ────────────────────
   whatWeDo: {
     heading: 'What I Done',
-    intro: 'I built the AI-powered support intelligence tool that knows the support operations better and handles the customer support queries effectively with human-like AI by your L1 Support engineers. Also it notifies the Founder on what their customers don’t like in their product, what difficulties they face, what new feature they expects. Tool will bring the strategic insights from support tickets to take their product decisions.',
+    intro: 'I Mentored the team to build the AI-powered support intelligence tool that knows the support operations better and handles the customer support queries effectively with human-like AI by your L1 Support engineers. Also it notifies the Founder on what their customers don’t like in their product, what difficulties they face, what new feature they expects. Tool will bring the strategic insights from support tickets to take their product decisions.',
     items: [
       {
         id: 1,

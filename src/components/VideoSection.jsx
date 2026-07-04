@@ -6,10 +6,10 @@ import posterImg from '../assets/mani_sir.jpeg';
 
 const videoDemos = [
   {
-    id: 'intro',
-    title: 'Introductory Overview',
-    description: 'A brief introduction to how the support infrastructure works and empowers SaaS startups.',
-    src: introVideo,
+    id: 'onboard',
+    title: 'Founder Onboarding Walkthrough',
+    description: 'Step-by-step walkthrough of setting up support workflows, syncing alerts, and customizing insights.',
+    src: onboardVideo,
     poster: posterImg,
   },
   {
@@ -20,10 +20,10 @@ const videoDemos = [
     poster: posterImg,
   },
   {
-    id: 'onboard',
-    title: 'Founder Onboarding Walkthrough',
-    description: 'Step-by-step walkthrough of setting up support workflows, syncing alerts, and customizing insights.',
-    src: onboardVideo,
+    id: 'intro',
+    title: 'Introductory Overview',
+    description: 'A brief introduction to how the support infrastructure works and empowers SaaS startups.',
+    src: introVideo,
     poster: posterImg,
   },
 ];
