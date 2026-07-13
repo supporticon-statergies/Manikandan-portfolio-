@@ -221,10 +221,10 @@ img { display: block; }
 /* ── Intro landing page ──────────────────────────────── */
 @media (max-width: 480px) {
   .intro-logo {
-    width: 100px !important;
-    height: 100px !important;
-    min-width: 100px !important;
-    min-height: 100px !important;
+    width: 130px !important;
+    height: 130px !important;
+    min-width: 130px !important;
+    min-height: 130px !important;
   }
 
   .intro-corner-tl {

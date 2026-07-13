@@ -37,6 +37,7 @@ export const siteConfig = {
     linkedin: { url: 'https://linkedin.com/in/s-a-manikandan', label: 'LinkedIn', handle: 's-a-manikandan' },
     instagram: { url: 'https://www.instagram.com/mani_thesupportdude?igsh=MWlwaDRwMjI4cjNtNA%3D%3D&utm_source=qr', label: 'Instagram', handle: '@mani_thesupportdude' },
     youtube: { url: 'https://youtube.com/@mani_thesupportdude', label: 'YouTube', handle: '@mani_thesupportdude' },
+    whatsapp: { url: 'https://wa.me/918667347679', label: 'WhatsApp', handle: 'Mani_theSupportdude' },
   },
 
   // ── Video Section ───────────────────────────────────────

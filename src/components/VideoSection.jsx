@@ -2,7 +2,9 @@ import { motion } from 'framer-motion';
 import introVideo from '../assets/1st.mp4';
 import featuresVideo from '../assets/featuresmp4.mp4';
 import onboardVideo from '../assets/Onboarding final.mp4';
-import posterImg from '../assets/mani_sir.jpeg';
+import introThumb from '../assets/Introductory Overview.png';
+import featuresThumb from '../assets/Platform Features Overview.png';
+import onboardThumb from '../assets/onboarding.png';
 
 const videoDemos = [
   {
@@ -10,21 +12,21 @@ const videoDemos = [
     title: 'Founder Onboarding Walkthrough',
     description: 'Step-by-step walkthrough of setting up support workflows, syncing alerts, and customizing insights.',
     src: onboardVideo,
-    poster: posterImg,
+    poster: onboardThumb,
   },
   {
     id: 'features',
     title: 'Platform Features Overview',
     description: 'Deep dive into the L1 AI-powered support intelligence, Notifications system, and Ticketing dashboard.',
     src: featuresVideo,
-    poster: posterImg,
+    poster: featuresThumb,
   },
   {
     id: 'intro',
     title: 'Introductory Overview',
     description: 'A brief introduction to how the support infrastructure works and empowers SaaS startups.',
     src: introVideo,
-    poster: posterImg,
+    poster: introThumb,
   },
 ];
 
@@ -133,6 +135,7 @@ export default function VideoSection() {
               }}
             >
               <video
+                key={demo.poster}
                 src={demo.src}
                 poster={demo.poster}
                 controls

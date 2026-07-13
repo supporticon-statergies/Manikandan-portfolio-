@@ -60,12 +60,15 @@ export default function MainCompanyPage() {
             </div>
           </div>
 
-          {/* Action Link (LinkedIn Connect) */}
+          {/* Action Link (WhatsApp Connect) */}
           <a
-            href="https://linkedin.com/in/s-a-manikandan"
+            href="https://wa.me/918667347679"
             target="_blank"
             rel="noopener noreferrer"
             style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
               fontSize: '12px',
               fontWeight: '600',
               color: '#FFFFFF',
@@ -73,6 +76,7 @@ export default function MainCompanyPage() {
               padding: '8px 16px',
               borderRadius: '20px',
               transition: 'background 0.18s ease',
+              textDecoration: 'none',
             }}
             onMouseEnter={(e) => e.currentTarget.style.background = '#1e7b48'}
             onMouseLeave={(e) => e.currentTarget.style.background = '#2FA866'}

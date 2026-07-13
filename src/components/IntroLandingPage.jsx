@@ -144,10 +144,10 @@ export default function IntroLandingPage({ onEnter }) {
             alt="Manikandan"
             className="intro-logo"
             style={{
-              height: '140px',
-              width: '140px',
-              minWidth: '140px',
-              minHeight: '140px',
+              height: '180px',
+              width: '180px',
+              minWidth: '180px',
+              minHeight: '180px',
               flexShrink: 0,
               aspectRatio: '1/1',
               borderRadius: '50%',
@@ -224,6 +224,44 @@ export default function IntroLandingPage({ onEnter }) {
 
         {/* Enter CTA */}
         <EnterButton onClick={onEnter} />
+
+        {/* Readiness Score Button */}
+        <motion.a
+          href="https://q-a-website.onrender.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.2, ease: 'easeOut' }}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
+          style={{
+            marginTop: '20px',
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '14px 32px',
+            background: '#2FA866',
+            border: '1.5px solid #2FA866',
+            borderRadius: '100px',
+            cursor: 'pointer',
+            color: '#FFFFFF',
+            fontSize: '15px',
+            fontWeight: '600',
+            fontFamily: 'Inter, sans-serif',
+            textDecoration: 'none',
+            boxShadow: '0 6px 16px rgba(47, 168, 102, 0.25)',
+            transition: 'background 0.2s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#278b54';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = '#2FA866';
+          }}
+        >
+          Get your SaaS Support Readiness score
+        </motion.a>
 
         {/* Bottom label */}
         <motion.p
