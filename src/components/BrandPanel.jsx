@@ -25,6 +25,7 @@ export default function BrandPanel() {
         <img
           src={`${import.meta.env.BASE_URL}logo.png`}
           alt={`${siteConfig.company.name} — ${siteConfig.company.tagline}`}
+          loading="lazy"
           style={{
             width: '100%',
             maxWidth: '220px',

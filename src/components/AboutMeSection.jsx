@@ -118,6 +118,7 @@ export default function AboutMeSection() {
             src={`${import.meta.env.BASE_URL}ceo.png`}
             alt="Manikandan — Customer Support Expert"
             className="profile-img"
+            loading="lazy"
             style={{
               width: '220px',
               height: '220px',

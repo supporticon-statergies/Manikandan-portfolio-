@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import introVideo from '../assets/1st.mp4';
 import featuresVideo from '../assets/featuresmp4.mp4';
 import onboardVideo from '../assets/Onboarding final.mp4';
-import introThumb from '../assets/Introductory Overview.png';
-import featuresThumb from '../assets/Platform Features Overview.png';
-import onboardThumb from '../assets/onboarding.png';
+import introThumb from '../assets/Introductory Overview.webp';
+import featuresThumb from '../assets/Platform Features Overview.webp';
+import onboardThumb from '../assets/onboarding.webp';
 
 const videoDemos = [
   {
